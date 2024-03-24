@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{%extends 'apps/index.html'%}
+{%block body_block%}
+<html>
+<head><h2 style="text-align: center;color:gold;font-size: xx-large;">SYSTECH GROUP</h2>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<style type="text/css">
+	table{
+		border-color: slateblue;
+		border-spacing: 10px;
+	}
+	th{
+		color: darkred;
+		border-color: royalblue;
+	}
+</style> val
+<center>
+<body>
+<h3 style="color: orangered;">UPDATE RECORDS</h3>
+<form method="POST" style="color:yellowgreen;">
+	{%csrf_token%}
+	 NO:<input type="text" name="no" value="{{e.no}}"><br>
+	 NAME:<input type="text" name="name" value="{{e.name}}"><br>
+	 MOBILE:<input type="text" name="mobile" value="{{e.mobile}}"><br>
+	 CITY:<input type="text" name="city" value="{{e.city}}"><br>
+	 COURSE:<input type="text" name="course" value="{{e.course}}"><br>
+
+	<input type="submit" name="submit" value="UPDATE RECORD">
+</form>
+</body>
+</center>
+{%endblock%}
+</html>

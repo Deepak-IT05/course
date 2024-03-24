@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+{%extends 'apps/index.html'%}
+{%block body_block%}
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Course Services</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SERVICE PAGE</title>
+	<h1 style="background-color:#5B2626;color:whitesmoke; text-align: center;"><b>TRAINIG COURSES AND SERVICES</b></h1>
+	<h2 style="color:black;text-align: center;">100% PRATICAL TRAINING</h2>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #666;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #999;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .service {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .service h2 {
+            margin-top: 0;
+        }
+
+        .service p {
+            margin-bottom: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>...All are Certification Courses...</h1>
+    </header>
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="/service">Courses</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="service">
+            <h2>Web Development Course</h2>
+            <p>This course covers HTML, CSS, JavaScript, and more to help you become a proficient web developer.</p>
+        </div>
+        <div class="service">
+            <h2>Data Science Course</h2>
+            <p>Learn data analysis, machine learning, and data visualization techniques in this comprehensive course.</p>
+        </div>
+        <div class="service">
+            <h2>Programming with Python</h2>
+            <p>Get started with Python programming language and explore its vast applications in software development, data analysis, and more.</p>
+        </div>
+        <!-- Additional Courses -->
+        <div class="service">
+            <h2>Robotics Courses</h2>
+            <p>Learn about Robotics & Drone Platform, Robotics Architecture, Application Layers, Networking Protocols, Security measures, and Integration of Applications with real-time practices and training..</p>
+        </div>
+        <div class="service">
+            <h2>Mobile App Development</h2>
+            <p>Explore mobile app development for iOS and Android platforms using frameworks like React Native and Flutter.</p>
+        </div>
+        <div class="service">
+            <h2>Cloud Computing Essentials</h2>
+            <p>Understand cloud computing concepts and platforms such as AWS, Azure, and Google Cloud Platform.</p>
+        </div>
+        <div class="service">
+            <h2>Programming with Java</h2>
+            <p>Get started with Java programming language and explore its vast applications in software development, data analysis, and more.</p>
+        </div>
+        <div class="service">
+            <h2>Hardware & Networking</h2>
+            <p>hardware and networking refer to the physical devices within a computer and the networks that connect them to share resources and exchange data with each other.</p>
+        </div>
+        <div class="service">
+            <h2>Cyber Security</h2>
+            <p>Explore Cyber Security practices, of protecting systems, networks, and programs from digital attacks..</p>
+        </div>
+        <div class="service">
+            <h2>Internet of Things</h2>
+            <p>IoT Course makes you professional with the IoT Platform, IoT Architecture, Application Layers, Networking Protocols, Security measures, and Integration of Applications with real-time practices and training..</p>
+        </div>
+        <div class="service">
+            <h2>Digital Marketing</h2>
+            <p>A Digital marketing course, Renowned as the best for advanced training in SEO, SEM, and various online strategies. Our institute ensures practical learning experiences to master digital marketing..</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Jarvis IT Solution</p>
+    </footer>
+</body>
+{%endblock%}
+</html>

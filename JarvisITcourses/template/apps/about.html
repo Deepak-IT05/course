@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+{%extends 'apps/index.html'%}
+{%block body_block%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Computer Course Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #666;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #999;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us<br>Trusted By 12,000+ Students<br>
+Stay Ahead With JarvisIT</h1>
+    </header>
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="/service">Courses</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </nav>
+    <div class="container">
+        <h2>Who We Are</h2>
+        <p>We are a team of dedicated professionals passionate about educating people in the field of computer science and technology. Our mission is to provide high-quality computer courses tailored to the needs of our students.</p>
+        
+        <h2>Our Vision</h2>
+        <p>Our vision is to empower individuals with the knowledge and skills required to thrive in the digital age. We aim to foster a supportive learning environment where students can explore, innovate, and excel.</p>
+        
+        <h2>Why Choose Us</h2>
+        <p>• Experienced Instructors: Our courses are taught by industry experts with years of experience in the field.</p>
+        <p>• Comprehensive Curriculum: We offer a wide range of courses covering various topics in computer science and technology.</p>
+        <p>• Hands-On Learning: Our courses emphasize practical, hands-on learning to ensure students gain real-world skills.</p>
+        <p>• Flexible Learning Options: We provide flexible learning options, including online courses and in-person classes, to accommodate diverse schedules and preferences.</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Jarvis IT Solution</p>
+    </footer>
+</body>
+{%endblock%}
+</html>

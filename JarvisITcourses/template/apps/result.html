@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{%extends 'apps/index.html'%}
+{%block body_block%}
+<html>
+<style>
+	table{
+		border-color: indianred;
+	}
+	th{
+		 color: blue;
+	}
+	</style>
+	<center>
+		<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h2 style="text-align: center;color: brown;">STUDENTS COURSE DETAILS</h2>
+	<table border="2">
+		<thead>
+			
+			<th>NO</th>
+			<th>NAME</th>
+			<th>MOBILE</th>
+			<th>CITY</th>
+			<th>COURSE</th>
+			<th>Actions</th>
+		</thead>
+		{% for i in e%}
+		<tr>
+			<td>{{i.no}}</td>
+			<td>{{i.name}}</td>
+			<td>{{i.mobile}}</td>
+			<td>{{i.city}}</td>
+			<td>{{i.course}}</td>
+			<td><a href="/update/{{i.id}}">update</a> | <a href="/delete/{{i.id}}">delete</a></td>
+		</tr>
+		{%endfor%}
+	</table>
+
+</body>
+{%endblock%}
+</center>
+
+</html>
